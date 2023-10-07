@@ -1,9 +1,10 @@
 Les 1: algoritmen
 =================
 
-.. exercise:: Oefening 1
+.. exercise::
+    :nonumber:
     :label: ex-01-01
-    :class: orange
+    :class: dropdown
 
         Here is my exercise!
 
@@ -12,3 +13,13 @@ Les 1: algoritmen
     :class: dropdown
 
         This is the solution!
+
+.. toggle:: 
+
+    Toggable content
+
+.. hint::
+    :class: toggle
+
+    Test
+
