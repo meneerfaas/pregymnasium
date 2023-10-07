@@ -1,0 +1,15 @@
+/* docs/_static/custom.css */
+
+:root {
+    --background-color: rgba(253, 126, 20, .3);
+    --border-color: #14fd46;
+}
+
+div.orange {
+    background-color: var(--background-color);
+    border-color: var(--border-color);
+}
+
+div.orange p.admonition-title {
+    background-color: var(--background-color);
+}

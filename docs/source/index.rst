@@ -1,20 +1,9 @@
-.. Computerprogrammeren voor het pregymnasium documentation master file, created by
-   sphinx-quickstart on Sat Oct  7 15:12:27 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to Computerprogrammeren voor het pregymnasium's documentation!
-======================================================================
+*****************************************************
+Welkom bij computerprogrammeren voor het pregymnasium
+*****************************************************
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Inhoudsopgave
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   chapters/ch01_turtle
