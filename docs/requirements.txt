@@ -1,1 +1,4 @@
 # Defining the exact version will make sure things don't break
+sphinx-book-theme
+sphinx-exercise
+sphinx-togglebutton
