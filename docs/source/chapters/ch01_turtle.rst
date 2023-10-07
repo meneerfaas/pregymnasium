@@ -1,26 +1,23 @@
 Les 1: algoritmen
 =================
 
-.. exercise::
-    :nonumber:
-    :label: ex-01-01
-    :class: toggle
-
-        Here is my exercise!
-
-.. solution:: ex-01-01
-    :label: so-01-01
-    :class: dropdown
-
-        This is the solution!
-
-.. admonition:: Custom Title
-    :class: dropdown custom-icon
+.. admonition:: Oefening 1
+    :class: dropdown admonition-exercise
 
     Toggable content
 
-.. hint::
-    :class: toggle
+.. admonition:: Oplossing oefening 1
+    :class: dropdown admonition-solution
 
-    Test
+    .. code-block:: python
+        :linenos:
+        :caption: hello_world.py
+        :name: hello_world
 
+        # Dit is mijn eerste programma
+        print('Hello, World!')
+
+.. hint:: 
+    :class: dropdown
+
+    Hint
