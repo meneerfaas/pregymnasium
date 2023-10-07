@@ -1,16 +1,6 @@
 /* docs/_static/custom.css */
-/*
-:root {
-    --background-color: rgba(253, 126, 20, .3);
-    --border-color: #14fd46;
-}
 
-div.orange {
-    background-color: var(--background-color);
-    border-color: var(--border-color);
+div.admonition.custom-icon>.admonition-title:after {
+    content: "\f24e";
+    /* the fa-scale icon */
 }
-
-div.orange p.admonition-title {
-    background-color: var(--background-color);
-}
-*/

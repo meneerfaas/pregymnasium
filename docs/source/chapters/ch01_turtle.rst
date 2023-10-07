@@ -4,7 +4,7 @@ Les 1: algoritmen
 .. exercise::
     :nonumber:
     :label: ex-01-01
-    :class: dropdown
+    :class: toggle
 
         Here is my exercise!
 
@@ -14,7 +14,8 @@ Les 1: algoritmen
 
         This is the solution!
 
-.. toggle:: 
+.. admonition:: Custom Title
+    :class: dropdown custom-icon
 
     Toggable content
 

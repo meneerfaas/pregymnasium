@@ -3,5 +3,6 @@ sphinx
 sphinx-rtd-theme==1.2.2
 sphinx-book-theme
 sphinx-immaterial
+pydata-sphinx-theme
 sphinx-exercise
 sphinx-togglebutton

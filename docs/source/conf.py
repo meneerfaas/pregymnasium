@@ -15,8 +15,7 @@ release = '0.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['sphinx_exercise',
-              'sphinx_togglebutton',
-              'sphinx_immaterial']
+              'sphinx_togglebutton']
 
 templates_path = ['_templates']
 exclude_patterns = ['.venv']
@@ -26,7 +25,7 @@ language = 'nl'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_immaterial'
+html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
 html_css_files = ['custom.css']
 
