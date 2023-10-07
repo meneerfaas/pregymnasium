@@ -1,7 +1,7 @@
 Les 1: algoritmen
 =================
 
-.. exercise:: 
+.. exercise:: Oefening 1
     :label: ex-01-01
     :class: orange
 
