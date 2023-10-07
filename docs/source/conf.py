@@ -30,5 +30,5 @@ html_static_path = ['_static']
 html_css_files = ['custom.css']
 
 # -- Options for togglebutton extension:
-togglebutton_hint = "Inhoud tonen"
-togglebutton_hint_hide = "Inhoud verbergen"
+togglebutton_hint = ""
+togglebutton_hint_hide = ""

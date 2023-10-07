@@ -1,10 +1,23 @@
 Les 1: algoritmen
 =================
 
+Voorbereiding
+-------------
+Voordat we kunnen beginnen
+
+Mu editor starten
+^^^^^^^^^^^^^^^^^
+
+
 .. admonition:: Oefening 1
     :class: dropdown admonition-exercise
 
     Toggable content
+
+.. hint:: 
+    :class: dropdown
+
+    Hint
 
 .. admonition:: Oplossing oefening 1
     :class: dropdown admonition-solution
@@ -17,7 +30,4 @@ Les 1: algoritmen
         # Dit is mijn eerste programma
         print('Hello, World!')
 
-.. hint:: 
-    :class: dropdown
 
-    Hint
