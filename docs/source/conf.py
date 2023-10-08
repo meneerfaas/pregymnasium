@@ -15,6 +15,7 @@ release = '0.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['sphinx_exercise',
+              'sphinx_design',
               'sphinx_togglebutton']
 
 templates_path = ['_templates']

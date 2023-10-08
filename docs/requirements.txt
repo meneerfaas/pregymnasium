@@ -6,3 +6,4 @@ sphinx-immaterial
 pydata-sphinx-theme
 sphinx-exercise
 sphinx-togglebutton
+sphinx-design
