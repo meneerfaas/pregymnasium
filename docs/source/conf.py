@@ -14,9 +14,8 @@ release = '0.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx_exercise',
-              'sphinx_design',
-              'sphinx_togglebutton']
+extensions = ['sphinx_copybutton',
+              'sphinx_design']
 
 templates_path = ['_templates']
 exclude_patterns = ['.venv']
@@ -29,10 +28,6 @@ language = 'nl'
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
 html_css_files = ['custom.css']
-
-# -- Options for togglebutton extension:
-togglebutton_hint = ""
-togglebutton_hint_hide = ""
 
 html_logo = "images/logo_beekvliet.png"
 
@@ -49,3 +44,6 @@ html_theme_options = {
     "link": "https://gymnasiumbeekvliet.nl/",
     }
 }
+
+# -- Options for sphinx-copybutton
+copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"

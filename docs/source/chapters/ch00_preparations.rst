@@ -1,4 +1,5 @@
-:sd_hide_title:
+.. role:: python(code)
+   :language: python
 
 Voorbereiding
 =============
@@ -48,18 +49,55 @@ Je hebt nu minstens twee vensters open op je scherm: het venster van de webbrows
 
     .. tab-item:: Stap 3
 
-        Mogelijk suggereerde Windows bij de vorige stap na het loslaten van de muisknop al een venster om op de rechterhelft van het venster te plaatsen. In dat geval klik je op het venster van je webbrowser. Als Windows geen suggestie deed, sleep je zelf het venster van je webbrowser naar de rechterrand van het scherm om het op de rechterhelft te plaatsen.
+        Zorg er zelf voor dat het venster van je webbrowser op de rechterhelft van het scherm terecht komt. 
 
+        .. image:: ../images/windows_arrange_3_small.png
+
+        Nu staan de twee vensters die je nodig hebt mooi naast elkaar, waardoor je tegelijkertijd deze uitleg kunt volgen en code kunt typen.
 
 Je eerste programma
 -------------------
 
-Nu is het tijd om je eerste programma te maken in Mu editor. Het woord programma is enigszins overdreven, want het bestaat slechts uit twee regels code. Typ de volgende code in Mu editor:
+Het is tijd om je eerste programma te maken in Mu editor. Het woord programma is enigszins overdreven, want het bestaat slechts uit twee regels code. Typ de onderstaande code voor het programma hello_word.py in Mu editor. Uiteraard hoef je de regelnummers 1 en 2 niet te typen.
 
 .. code-block:: python
+    :class: no-copybutton
     :linenos:
     :caption: hello_world.py
     :name: hello_world
 
     # Dit is mijn eerste programma
     print('Hello, World!')
+
+.. dropdown:: Hoe typ je aanhalingstekens?
+    :color: info
+    :icon: info
+
+    Een aanhalingsteken typ je door eerst op de toets met het aanhalingsteken :kbd:`'` te drukken, gevolgd door :kbd:`Spatie`. Het aanhalingsteken verschijnt pas nadat je op de spatiebalk heb gedrukt.
+
+    .. image:: ../images/typing_quotes_small.png
+
+    Je kunt ook dubbele aanhalingstekens gebruiken (voor Python maakt dat weinig uit). Daarvoor moet je :kbd:`Shift` ingedrukt houden terwijl je op :kbd:`'` drukt. En daarna weer :kbd:`Spatie`.
+
+Klik in de knoppenbalk op :guilabel:`Save` om het bestand op te slaan. Navigeer naar je  *Documenten* map en sla daarin het bestand op onder de naam :file:`hello_world`.
+
+.. image:: ../images/mu_save_file.png
+
+Klik in de knoppenbalk op :guilabel:`Run` om je programma uit te voeren. Als je alles goed hebt gedaan, wordt de tekst :code:`Hello, World!` getoond.
+
+.. image:: ../images/mu_hello_world.png
+
+Klik in de knoppenbalk op de knop :guilabel:`Stop` om de uitvoering van het programma te stoppen.
+
+.. dropdown:: Wist je dat?
+    :open:
+    :color: info
+    :icon: info
+
+    Een programma dat :code:`Hello, World!` op het scherm toont, is traditioneel het eerste dat elke programmeur maakt wanneer zij/hij een nieuwe programmeertaal leert. Het is eenvoudig, maar toch heb je nu al een aantal dingen geleerd:
+
+    * Hoe je in Mu editor code typt, opslaat en uitvoert.
+    * Dat je in Python met een hekje :python:`#` commentaar kunt aangeven. Commentaar wordt door Python genegeerd bij het uitvoeren van de code.
+    * Dat je in Python een tekst op het scherm kunt tonen met de functie :python:`print()` en dat de tekst tussen aanhalingstekens moet staan.
+
+Je bent klaar voor het echte werk. Ga door met :doc:`/chapters/ch01_turtle`.
