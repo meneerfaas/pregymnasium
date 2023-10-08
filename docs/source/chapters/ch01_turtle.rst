@@ -204,3 +204,36 @@ Tussen de haakjes geef je de gewenste kleur mee met de Engelse naam tussen aanha
     Breid je code in :file:`hello_turtle.py` uit zodat de schildpad het woord HELLO tekent, waarbij elke letter een andere kleur en een andere pendikte heeft. Je mag zelf je favoriete kleuren en pendiktes kiezen. Hieronder staat een voorbeeldje.
 
     .. image:: ../images/turtle_HELLO.png
+
+Draaiingshoeken
+---------------
+
+Draaien met een hoek van 90° is niet zo moeilijk. Draaiingshoeken met een andere grootte zijn lastiger dan je misschien denkt. Probeer de onderstaande opdracht maar eens.
+
+.. dropdown:: Opdracht 04
+    :color: secondary
+    :icon: pencil
+
+    Begin met een nieuw codebestand (via de :guilabel:`New` knop). Importeer de :python:`turtle` module en maak een turtle aan. In de vorige opdrachten heette de turtle :python:`tony`, maar je mag nu ook zelf een naam verzinnen. Sla het bestand op onder de naam :file:`turtle_house.py`.
+
+    Maak een algoritme dat de onderstaande figuur tekent zónder de pen van het papier te halen, zónder de :python:`turtle.bk()` functie te gebruiken en zónder een draai van 180° te maken.
+
+    .. image:: ../images/turtle_house.png
+
+    .. dropdown:: Hint 1
+        :color: secondary
+        :icon: light-bulb
+
+        Teken de figuur eerst eens zelf op papier zonder je pen op te tillen. Kun je erachter komen in welk punt je het beste kunt beginnen?
+
+    .. dropdown:: Hint 2
+        :color: secondary
+        :icon: light-bulb
+
+        Begin in de hoek linksonder en teken eerst het vierkant van 80 bij 80 pixels. Maak dan de diagonaal, het dak en tenslotte de diagonaal naar rechtsonder.
+
+    .. dropdown:: Hint 3
+        :color: secondary
+        :icon: light-bulb
+
+        De hoeken in de figuur zijn niet altijd de hoeken die je moet invullen bij :python:`turtle.lt()` of :python:`turtle.rt()`.
