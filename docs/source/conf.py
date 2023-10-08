@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Pregymnasium Python'
+project = 'Computerprogrammeren voor het Pregymnasium'
 copyright = '2023, S. Faas'
 author = 'S. Faas'
 release = '0.0'
@@ -39,13 +39,13 @@ html_logo = "images/logo_beekvliet.png"
 # -- Options for pydata_sphinx_theme
 html_theme_options = {
 "navbar_start": ["navbar-logo"],
-"navbar_center": ["navbar-nav"],
+"navbar_center": [],
 "navbar_end": ["navbar-icon-links"],
-"navbar_persistent": ["search-button"],
+"navbar_persistent": [],
 "logo": {
     "image_light": "images/logo_beekvliet.png",
     "image_dark": "images/logo_beekvliet.png",
-    "text": "Beekvliet Pregymnasium",
+    "text": "Computerprogrammeren voor het Pregymnasium",
     "link": "https://gymnasiumbeekvliet.nl/",
     }
 }
