@@ -1,3 +1,5 @@
+:sd_hide_title:
+
 Voorbereiding
 =============
 
@@ -48,7 +50,7 @@ Je hebt nu minstens twee vensters open op je scherm: het venster van de webbrows
 
         Mogelijk suggereerde Windows bij de vorige stap na het loslaten van de muisknop al een venster om op de rechterhelft van het venster te plaatsen. In dat geval klik je op het venster van je webbrowser. Als Windows geen suggestie deed, sleep je zelf het venster van je webbrowser naar de rechterrand van het scherm om het op de rechterhelft te plaatsen.
 
-        
+
 
 
 Je eerste programma
