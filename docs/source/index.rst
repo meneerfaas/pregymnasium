@@ -3,8 +3,8 @@ Welkom bij computerprogrammeren voor het pregymnasium
 *****************************************************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Inhoudsopgave
 
-   chapters/ch00_preparations
-   chapters/ch01_turtle
+   parts/part_00_preparations
+   parts/part_01_algorithms
