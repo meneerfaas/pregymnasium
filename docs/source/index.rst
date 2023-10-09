@@ -3,7 +3,7 @@ Welkom bij computerprogrammeren voor het pregymnasium
 *****************************************************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Inhoudsopgave
 
    parts/part_00_preparations
