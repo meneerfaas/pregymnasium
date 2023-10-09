@@ -100,4 +100,4 @@ Klik in de knoppenbalk op de knop :guilabel:`Stop` om de uitvoering van het prog
     * Dat je in Python met een hekje :python:`#` commentaar kunt aangeven. Commentaar wordt door Python genegeerd bij het uitvoeren van de code.
     * Dat je in Python een tekst op het scherm kunt tonen met de functie :python:`print()` en dat de tekst tussen aanhalingstekens moet staan.
 
-Je bent klaar voor het echte werk. Ga door met :doc:`/parts/part_01_algorithms`.
+Je bent klaar voor het echte werk. Ga door met :doc:`lesson_01_algorithms`.

@@ -6,5 +6,5 @@ Welkom bij computerprogrammeren voor het pregymnasium
    :maxdepth: 1
    :caption: Inhoudsopgave
 
-   parts/part_00_preparations
-   parts/part_01_algorithms
+   lesson_00_preparations
+   lesson_01_algorithms
