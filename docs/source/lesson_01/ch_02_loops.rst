@@ -58,9 +58,9 @@ In deze code wordt op regel 1 een variabele :python:`naam_tony` gemaakt, waarin 
 
     Je mag de variabelenaam zelf bedenken, maar hij moet wel aan enkele voorwaarden voldoen:
 
-        * De naam moet beginnen met een letter of het underscore karakter (:python:`_`).
-        * De naam mag niet met een cijfer beginnen.
-        * De naam mag alleen letters, cijfers en het underscore karakter bevatten.
+    * De naam moet beginnen met een letter of het underscore karakter (:python:`_`).
+    * De naam mag niet met een cijfer beginnen.
+    * De naam mag alleen letters, cijfers en het underscore karakter bevatten.
   
     Variabelenamen zijn hoofdlettergevoelig. Dus :python:`leeftijd` en :python:`Leeftijd` zijn twee verschillende variabelen.
 
@@ -161,6 +161,26 @@ Het sterretje :python:`*` is in Python het symbool voor vermenigvuldiging. Wanne
           - floating point
           - kommagetal
 
+    Overigens is :python:`tony` in :ref:`hello_turtle_v01` ook een variabele. Het datatype van :python:`tony` kun je met :python:`type()` opvragen:
+ 
+    .. code-block:: python
+        :linenos:
+        :caption: hello_turtle.py
+        :name: hello_turtle_v03
+
+        import turtle
+
+        tony = turtle.Turtle()
+
+        print(type(tony))
+
+    .. code-block:: text
+        :name: hello_turtle_v03_output
+        :caption: hello_turtle.py output
+
+        <class 'turtle.Turtle'>
+
+    Het datatype van :python:`tony` is :python:`turtle.Turtle` en daarmee kan Python niet rekenen. Dus iets als :python:`3 * tony` of :python:`tony + tony` zal een foutmelding opleveren.
 
 .. dropdown:: Opdracht 01
     :color: secondary
