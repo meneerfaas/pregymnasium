@@ -159,6 +159,13 @@ Bij de functies :python:`turtle.penup()` en :python:`turtle.pendown()` zet je ni
 
     Kies zelf mooie lengtes voor de drie horizontale lijnen van de letter E, zodat je resultaat lijkt op het bovenstaande plaatje.
 
+    .. dropdown:: Hint
+        :color: secondary
+        :icon: light-bulb
+
+        Na de code die de letter H tekent, moet je dus eerst :python:`tony.penup()` aanroepen om de pen van het papier te halen. Vervolgens beweeg je de schildpad 20 pixels vooruit met :python:`tony.fd(20)` (misschien moet je hem eerst nog draaien, zodat hij de goede kant op gaat). Daarna roep je :python:`tony.pendown()` aan om de pen weer op het papier te zetten. Als je dat voor elkaar hebt, kun je de code maken die de letter E tekent. 
+
+
 Kleuren
 -------
 
@@ -194,6 +201,7 @@ Draaien met een hoek van 90° is niet zo moeilijk. Draaiingshoeken met een ander
     Maak een algoritme dat de onderstaande figuur tekent zónder de pen van het papier te halen, zónder de :python:`turtle.bk()` functie te gebruiken en zónder een draai van 180° te maken.
 
     .. image:: images/turtle_house.png
+      :align: center
 
     .. dropdown:: Hint 1
         :color: secondary
@@ -265,6 +273,7 @@ Je kunt dit uitproberen met het onderstaande codevoorbeeld. Maak hiervoor weer e
     Breid de code in :file:`turtle_fill.py` uit, zodat links van het driehoekje een regelmatige vijfhoek met rode vulling wordt getekend, zoals in onderstaande figuur. De zijden van de vijfhoek zijn 60 pixels lang.
 
     .. image:: images/turtle_fill.png
+      :align: center
 
     .. dropdown:: Hint
         :color: secondary
@@ -291,3 +300,95 @@ Je kunt dit uitproberen met het onderstaande codevoorbeeld. Maak hiervoor weer e
             - 5
             - ?°
             - 5 * ?° = 360°
+
+Cirkels
+-------
+
+Veelhoeken zijn leuke figuren, en we zullen er later nog vaker op terugkomen, maar soms wil je gewoon een cirkel tekenen. Met Python turtle kan dat op twee manieren; met :python:`turtle.dot()` en met :python:`turtle.circle()`.
+
+.. list-table::
+    :header-rows: 1
+
+    * - Functie
+      - Werking 
+    * - :python:`turtle.dot(size, color)`
+      - Tekent een ronde stip met een diameter die je aangeeft met :python:`size` en een kleur die je aangeeft met :python:`color`. Bijvoorbeeld :python:`turtle.dot(40, "blue")`.  
+    * - :python:`turtle.circle(radius)`
+      - Tekent een cirkel met een straal (dat is de afstand tussen het middelpunt van de cirkel en de rand, dus eigenlijk de halve diameter) die je aangeeft met :python:`radius`. Bijvoorbeeld :python:`turtle.circle(20)`.  
+
+Probeer beide functies uit met onderstaande code. Gebruik een nieuw bestand, met de naam :file:`turtle_circles.py`
+
+.. code-block:: python
+    :linenos:
+    :caption: turtle_circles.py
+    :name: turtle_circles
+
+    import turtle
+
+    tony = turtle.Turtle()
+
+    tony.circle(40)
+    tony.dot(80)
+
+Zie je het verschil tussen de beide functies? :python:`turtle.dot()` levert een gevulde cirkel (een stip) en :python:`turtle.circle()` een niet-gevulde cirkel. Je kunt met :python:`turtle.begin_fill()` en :python:`turtle.end_fill()` de niet-gevulde cirkel natuurlijk alsnog vullen, zoals in onderstaand voorbeeld. Om het verschil tussen rand en vulling goed zichtbaar te maken worden in dit voorbeeld ook de pendikte en de kleuren ingesteld.
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 4-6,8,10
+    :caption: turtle_circles.py
+    :name: turtle_circles_v02
+
+    import turtle
+
+    tony = turtle.Turtle()
+    tony.pensize(5)
+    tony.pencolor("black")
+    tony.fillcolor("green")
+
+    tony.begin_fill()
+    tony.circle(40)
+    tony.end_fill()
+    tony.dot(80)
+
+.. dropdown:: Meer weten over extra mogelijkheden met turtle.circle()? 
+    :color: info
+    :icon: info
+
+    Behalve de straal van de cirkel, kun je aan :python:`turtle.circle()` nóg een getal meegeven. Probeer de volgende code maar eens:
+
+    .. code-block:: python
+        :linenos:
+        :caption: turtle_circles.py
+        :name: turtle_circles_v03
+
+        import turtle
+
+        tony = turtle.Turtle()
+
+        tony.circle(40, 90)
+    
+    Run het programma en wijzig daarna regel 5 in :python:`tony.circle(40, 180)`. Run weer en wijzig daarna regel 5 in :python:`tony.circle(40, 270)`. Zie je wat dat tweede getal doet?
+
+    Je kunt zelfs nog een derde getal toevoegen binnen de haakjes. Probeer het volgende:
+
+    .. code-block:: python
+        :linenos:
+        :caption: turtle_circles.py
+        :name: turtle_circles_v04
+
+        import turtle
+
+        tony = turtle.Turtle()
+
+        tony.circle(40, 360, 4)
+    
+    Run het programma en wijzig daarna regel 5 in :python:`tony.circle(40, 360, 5)`. Run weer en wijzig daarna regel 5 in :python:`tony.circle(40, 360, 6)`. Zie je wat het derde getal doet?
+
+.. dropdown:: Opdracht 06
+    :color: secondary
+    :icon: pencil
+
+    Vervang de code in :file:`turtle_circles.py` door een programma dat een stoplicht tekent zoals hieronder getoond. De afmetingen mag je zelf kiezen en hoeven niet exact overeen te komen met het voorbeeld.
+
+    .. image:: images/turtle_trafficlight.png
+      :align: center

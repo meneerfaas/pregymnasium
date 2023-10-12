@@ -21,6 +21,14 @@ Variabelen
         :columns: 6
 
         .. image:: images/variables.png
+
+.. dropdown:: Waarschuwing
+    :color: warning
+    :icon: alert
+    :open:
+
+    Dit onderdeel kan een beetje saai zijn. Val niet in slaap, worstel je er doorheen, want je hebt de kennis nodig om later weer leukere dingen te programmeren. Sterkte :octicon:`smiley`
+
           
 Maak in Mu editor weer een nieuw bestand door op de knop :guilabel:`New` te klikken. Typ de onderstaande code in het bestand (dus niet kopiëren en plakken) en let daarbij op hoofd- en kleine letters en ook op spaties. Sla het bestand op als :file:`hello_variables.py`.
 
@@ -211,6 +219,38 @@ Het sterretje :python:`*` is in Python het symbool voor vermenigvuldiging. Wanne
     :color: secondary
     :icon: pencil
 
+    Bekijk de onderstaande code en probeer eerst uit je hoofd te beredeneren wat de waarden van de variabelen :python:`getal1`, :python:`getal2`, :python:`getal3`  en :python:`getal4` zijn nadat deze code is uitgevoerd. Controleer daarna je voorspelling door de code naar Mu editor (vervang de code in het bestand :file:`hello_variables`) te kopiëren en te runnen.   
+    
+    .. code-block:: python
+        :linenos:
+        :name: hello_variables_opdr02
+
+        getal1 = 3
+        getal2 = getal1 + 2
+        getal3 = getal2 * (getal1 + getal2)
+        getal4 = getal3 - getal2
+
+        print("getal1 =", getal1)
+        print("getal2 =", getal2)
+        print("getal3 =", getal3)
+        print("getal4 =", getal4)
+
+    .. dropdown:: Oplossing
+        :color: secondary
+        :icon: check-circle
+
+        .. code-block:: text
+            :name: hello_variables_opdr02_opl
+
+            getal1 = 3
+            getal2 = 5
+            getal3 = 40
+            getal4 = 35  
+
+.. dropdown:: Opdracht 03
+    :color: secondary
+    :icon: pencil
+
     Bekijk de onderstaande code en probeer eerst uit je hoofd te beredeneren wat de waarden van :python:`a`, :python:`b` en :python:`c` zijn nadat deze code is uitgevoerd. Controleer daarna je antwoord door de code naar Mu editor (vervang de code in het bestand :file:`hello_variables`) te kopiëren en te runnen.   
     
     .. code-block:: python
@@ -231,6 +271,8 @@ Het sterretje :python:`*` is in Python het symbool voor vermenigvuldiging. Wanne
 
 While loops
 -----------
+
+Heb je het werken met variabelen door? Mooi, dan kunnen we nu weer verdergaan met het leukere programmeerwerk!
 
 Maak in Mu editor weer een nieuw bestand door op de knop :guilabel:`New` te klikken. Kopieer en plak de onderstaande code in het bestand en sla het op als :file:`turtle_while.py`.
 
