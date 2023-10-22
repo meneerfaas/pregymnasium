@@ -8,3 +8,4 @@ Welkom bij computerprogrammeren voor het pregymnasium
 
    lesson_00_preparations
    lesson_01_algorithms
+   lesson_02_variables_and_loops
