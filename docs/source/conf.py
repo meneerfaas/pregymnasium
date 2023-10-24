@@ -40,8 +40,7 @@ html_theme_options = {
 "logo": {
     "image_light": "images/logo_beekvliet.png",
     "image_dark": "images/logo_beekvliet.png",
-    "text": "Computerprogrammeren voor het Pregymnasium",
-    "link": "https://gymnasiumbeekvliet.nl/",
+    "text": "Computerprogrammeren voor het Pregymnasium"
     }
 }
 

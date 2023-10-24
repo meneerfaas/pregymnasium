@@ -233,3 +233,40 @@ Deze code tekent eerst een lijnstukje van 2 pixels, vervolgens een lijnstukje va
     :icon: pencil
 
     Experimenteer met de code in :file:`turtle_spiral.py` door telkens één getal een beetje te veranderen en te bekijken hoe de figuur verandert. En wat gebeurt er als je op regel 8 :python:`tony.lt(30)` vervangt door :python:`tony.lt(lengte)` of :python:`tony.lt(3 * lengte)`? Probeer maar uit!
+
+For loops
+---------
+
+Een while loop kost je tenminste 3 regels code:
+
+1. Een regel om de tellervariabele aan te maken.
+2. Een regel met het :python:`while` statement.
+3. Een regel die de tellervariabele aanpast.
+
+Voor het tekenen van een vierkant waarmee deze les begon, zag dat er zo uit:
+
+.. code-block:: python
+    :name: while_code
+
+    zijde = 0               # Hier wordt de tellervariabele aangemaakt.
+    while zijde < 4:        # Dit is het while statement.
+        ...
+        ...
+        zijde = zijde + 1   # Hier wordt de tellervariabele aangepast.
+
+Een for loop voegt deze drie acties samen in slechts één coderegel. Test de volgende code maar eens in Mu editor:
+
+.. code-block:: python
+    :linenos:
+    :caption: turtle_for.py
+    :name: turtle_for
+
+    import turtle
+
+    tony = turtle.Turtle()
+
+    for zijde in range(4):
+        tony.fd(100)
+        tony.lt(90)
+
+Waar we in het :ref:`eerste voorbeeld <turtle_while_v01>` van deze les nog 5 regels code nodig hadden om een vierkant te tekenen, hebben we nu genoeg aan 3 regels!
