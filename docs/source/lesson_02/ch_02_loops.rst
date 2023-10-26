@@ -30,15 +30,58 @@ Run de code om het resultaat te bekijken. Snap je hoe deze code werkt? Het Pytho
 
     Zolang de waarde van :python:`zijde` kleiner is dan :python:`4`, doe het volgende:
 
-De regels 7, 8 en 9 zijn **ingesprongen**. Dat is belangrijk! Daardoor weet Python dat die drie regels binnen de 'while lus' vallen. Zolang aan de voorwaarde :python:`zijde < 4` is voldaan, voert Python deze regels uit.
+De regels 7, 8 en 9 zijn **ingesprongen**. Dat is belangrijk! Daardoor weet Python dat die drie regels binnen de 'while lus' vallen. Zolang aan de voorwaarde :python:`zijde < 4` is voldaan, voert Python deze regels uit. Regel 9 zorgt ervoor dat de waarde van :python:`zijde` met 1 wordt verhoogd. Na het uitvoeren van deze regel, springt Python terug naar regel 6 om de voorwaarde :python:`zijde < 4` opnieuw te checken.
 
-Regel 9 zorgt ervoor dat de waarde van :python:`zijde` met 1 wordt verhoogd. Na het uitvoeren van deze regel, springt Python terug naar regel 6 om de voorwaarde :python:`zijde < 4` opnieuw te checken.
+Klinkt moeilijk? Misschien helpt het dan om de while loop echt in actie te zien. Maak Opdracht 01 hieronder om te leren over de 'debugging mode' van Mu-editor en te zien hoe de while loop wordt uitgevoerd.
+
+.. _opdracht-01:
+
+.. dropdown:: Opdracht 01
+    :color: secondary
+    :icon: pencil
+
+    Klik op regel 6 in :file:`turtle_while.py` met de muiscursor in het grijze stukje rechts naast het regelnummer 6 om een zogenoemd **breakpoint** te plaatsen.
+
+    .. figure:: images/debug_breakpoint.png
+        :align: left
+        :figwidth: 100%
+
+    Klik daarna op :guilabel:`Debug` bovenin de knoppenbalk.
+
+    .. figure:: images/debug_debug_button.png
+        :align: left
+        :figwidth: 100%
+
+    Nu start Mu editor de uitvoering van de code, maar pauzeert op regel 6, waar je zojuist het breakpoint plaatste. Gebruik de knop :guilabel:`Step over` om de code vanaf het breakpoint telkens een stapje verder uit te voeren. Houd daarbij in de gaten wat er in de turtle tekening gebeurt, maar ook wat de waarde van de variabele :python:`zijde` is. Die waarde wordt in Mu editor aan de rechterkant getoond. 
+
+    .. figure:: images/debug_step_over.png
+        :align: left
+        :figwidth: 100%
+
+    Begrijp je nu hoe de while loop werkt? Klik op :guilabel:`Stop` om het debuggen te stoppen. 
 
 .. dropdown:: Meer weten over inspringing van regels?
     :color: info
     :icon: info
 
-    In Python bepaalt de inspringing (Engels: indentation) van een coderegel tot welk blok die regel behoort. Bestudeer de volgende code eens, nadat je hem in Mu editor hebt uitgevoerd.
+    In Python bepaalt de inspringing (Engels: indentation) van een coderegel tot welk blok die regel behoort. Kopieer de onderstaande code naar Mu editor om te zien hoe dat werkt:
+
+    .. code-block:: python
+        :linenos:
+        :caption: hello_while.py
+        :name: hello_while
+
+        i = 0
+        while i < 3:
+            print('Deze zin wordt drie keer geprint.')
+            print('En deze zin valt ook binnen de while lus.')
+            i = i + 1
+        print('Maar deze zin wordt slechts één keer geprint.')
+    
+    De regels 3, 4 en 5 van :file:`hello_while.py` zijn ingesprongen: ze worden voorafgegaan door 4 spaties. Daardoor weet Python dat die regels één blokje vormen binnen de while lus.
+    Regel 6 is niet ingesprongen en hoort daardoor niet bij het blokje dat wordt herhaald.
+    
+    Bestudeer nu de volgende code eens, nadat je hem in Mu editor hebt uitgevoerd. Je ziet hier een while lus bínnen een andere while lus.
 
     .. code-block:: python
         :linenos:
@@ -66,7 +109,9 @@ Regel 9 zorgt ervoor dat de waarde van :python:`zijde` met 1 wordt verhoogd. Na 
 
     Wanneer je in Mu editor op :kbd:`Enter` drukt nadat je regel 6 hebt getypt, springt de volgende regel automatisch in. Wil je handmatig een regel laten inspringen, dan kun je daarvoor de :kbd:`Tab` toets gebruiken (links naast de :kbd:`Q`).
 
-.. dropdown:: Opdracht 01
+In de volgende opdrachten ga je je eigen while loops schrijven. Je zult merken dat je met loops mooie patronen kunt tekenen.
+
+.. dropdown:: Opdracht 02
     :color: secondary
     :icon: pencil
 
@@ -79,7 +124,7 @@ Regel 9 zorgt ervoor dat de waarde van :python:`zijde` met 1 wordt verhoogd. Na 
         .. code-block:: python
             :linenos:
             :caption: turtle_while.py
-            :name: turtle_while_opdr01
+            :name: turtle_while_opdr02
 
             import turtle
 
@@ -91,14 +136,14 @@ Regel 9 zorgt ervoor dat de waarde van :python:`zijde` met 1 wordt verhoogd. Na 
                 tony.lt(120)
                 zijde = zijde + 1
 
-.. dropdown:: Opdracht 02
+.. dropdown:: Opdracht 03
     :color: secondary
     :icon: pencil
 
     Vervang de code in :file:`turtle_while.py` door een programma dat met behulp van een **while loop binnen een andere while loop** vier driehoeken op een rij tekent zoals hieronder afgebeeld.
 
     .. image:: images/triangles_in_a_row.png
-
+        
     .. dropdown:: Hint
         :color: secondary
         :icon: light-bulb
@@ -106,7 +151,7 @@ Regel 9 zorgt ervoor dat de waarde van :python:`zijde` met 1 wordt verhoogd. Na 
         Gebruik voor je programma de volgende structuur:
 
         .. code-block:: python
-            :name: turtle_while_opdr02_hint
+            :name: turtle_while_opdr03_hint
 
             import turtle
 
@@ -129,7 +174,7 @@ Regel 9 zorgt ervoor dat de waarde van :python:`zijde` met 1 wordt verhoogd. Na 
         .. code-block:: python
             :linenos:
             :caption: turtle_while.py
-            :name: turtle_while_opdr02
+            :name: turtle_while_opdr03
 
             import turtle
 
@@ -145,7 +190,7 @@ Regel 9 zorgt ervoor dat de waarde van :python:`zijde` met 1 wordt verhoogd. Na 
                 tony.fd(100)
                 driehoek = driehoek + 1
 
-.. dropdown:: Opdracht 03
+.. dropdown:: Opdracht 04
     :color: secondary
     :icon: pencil
 
@@ -160,7 +205,7 @@ Regel 9 zorgt ervoor dat de waarde van :python:`zijde` met 1 wordt verhoogd. Na 
         Je programma bestaat uit twee while loops, waarvan de binnenste het tekenen van één vierkant verzorgt. Na het tekenen van een vierkant moet de turtle 18 graden linksom draaien.
 
         .. code-block:: python
-            :name: turtle_while_opdr03_hint
+            :name: turtle_while_opdr04_hint
 
             ...
             while ...:
@@ -173,7 +218,7 @@ Regel 9 zorgt ervoor dat de waarde van :python:`zijde` met 1 wordt verhoogd. Na 
                 tony.lt(18)  # Draai tony 18 graden linksom
                 ...
 
-.. dropdown:: Opdracht 04
+.. dropdown:: Opdracht 05
     :color: secondary
     :icon: pencil
 
@@ -228,7 +273,7 @@ Het wordt nóg interessanter wanneer je de while loop variabele niet alleen als 
 
 Deze code tekent eerst een lijnstukje van 2 pixels, vervolgens een lijnstukje van 4 pixels, dan 6 pixels, dan 8 pixels, enzovoort. En tussendoor draait de turtle telkens 30 graden. Kijk maar eens wat dat oplevert, door de code in Mu editor uit te proberen.
 
-.. dropdown:: Opdracht 05
+.. dropdown:: Opdracht 06
     :color: secondary
     :icon: pencil
 
@@ -269,4 +314,33 @@ Een for loop voegt deze drie acties samen in slechts één coderegel. Test de vo
         tony.fd(100)
         tony.lt(90)
 
-Waar we in het :ref:`eerste voorbeeld <turtle_while_v01>` van deze les nog 5 regels code nodig hadden om een vierkant te tekenen, hebben we nu genoeg aan 3 regels!
+Waar we in het :ref:`eerste voorbeeld <turtle_while_v01>` van deze les nog 5 regels code nodig hadden om een vierkant te tekenen, hebben we nu genoeg aan 3 regels! Als je een breakpoint in regel 5 plaatst en de :guilabel:`Debug` mode gebruikt (zie :ref:`Opdracht 01 <opdracht-01>` voor uitleg over debuggen), kun je checken dat de waarde van de variabele :python:`zijde` weer van 0 tot en met 3 loopt.
+
+.. dropdown:: Opdracht 07
+    :color: secondary
+    :icon: pencil
+
+    Vervang de code in :file:`turtle_for.py` door een programma dat de onderstaande figuur tekent. Je mag zelf de kleur en de pendikte bepalen, maar voor het daadwerkelijke tekenen mag je **maximaal 3 regels code** gebruiken.
+
+    .. image:: images/five_pointed_star.png
+        :align: center
+
+    .. dropdown:: Hint
+        :color: secondary
+        :icon: light-bulb
+
+        Vind je het lastig om de draaiingshoek te bepalen? Bedenk dan dat de turtle in totaal 2 keer volledig ronddraait (dus de totale draaiingshoek is 2 * 360° = 720°) en dat die volledige draai over 5 stappen wordt verdeeld.
+
+.. dropdown:: Opdracht 08
+    :color: secondary
+    :icon: pencil
+
+    Vervang de code in :file:`turtle_for.py` door een programma dat de onderstaande figuur tekent. Deze 'bloem' bestaat uit 10 vierkanten met zijden van lengte 100. Om hem te tekenen heb je twee for loops nodig: één om iets 10 keer uit te voeren en daarbinnen één om een vierkant te tekenen.
+
+    .. image:: images/flower_of_squares.png
+        :align: center
+
+    Je kunt de bloem nog mooier maken door :python:`fillcolor()`,  :python:`begin_fill()` en :python:`end_fill()` te gebruiken en een stip (:python:`dot()`) in het midden te plaatsen.
+
+    .. image:: images/flower_of_squares_2.png
+        :align: center
