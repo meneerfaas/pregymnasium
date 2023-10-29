@@ -74,7 +74,7 @@ Het nut van de variabele :python:`lengte` is nu nog niet zo duidelijk. Maar brei
     tony.lt(90)
     tony.fd(lengte)
 
-Deze code tekent een vierkant met zijden van 100 pixels. Hoe zou je de code moeten aanpassen om zijden van 200 pixels te laten tekenen? Juist, je hoeft slechts regel 5 aan te passen naar :python:`lengte = 200`. Zouden we geen variabele hebben gebruikt, dan had je vier regels code moeten aanpassen (regels 6, 8, 10 en 12 wijzigen naar :python:`tony.fd(200)` ) en nu maar één!
+Deze code tekent een vierkant met zijden van 100 pixels. Hoe zou je de code moeten aanpassen om zijden van 200 pixels te laten tekenen? Juist, je hoeft aleen maar regel 5 aan te passen naar :python:`lengte = 200`. Zouden we geen variabele hebben gebruikt, dan had je vier regels code moeten aanpassen (regels 6, 8, 10 en 12 wijzigen naar :python:`tony.fd(200)` ) en nu slechts één!
 
 Het aardige van variabelen is dat je ermee kunt rekenen. Wijzig bijvoorbeeld je code als volgt:
 
@@ -105,7 +105,7 @@ Begrijp je wat hier gebeurt? De variabele :python:`breedte` krijgt in regel 6 de
     :color: secondary
     :icon: pencil
 
-    Pas de code in :file:`turtle_variables.py` zodanig aan dat een rechthoek wordt getekend waarvan de breedte 20 pixels minder is dan de lengte en waarvan de lengte 180 pixels is.
+    Pas regels 5 en 6 in :file:`turtle_variables.py` zodanig aan dat een rechthoek wordt getekend waarvan de breedte 20 pixels minder is dan de lengte en waarvan de lengte 180 pixels is.
 
     .. dropdown:: Oplossing
         :color: secondary

@@ -4,7 +4,7 @@
 Coördinaten
 ===========
 
-Tot nu toe bewoog je de turtle met de functies :python:`turtle.fd()` en :python:`turtle.bk()` een aantal pixels vooruit of achteruit. En met :python:`turtle.lt()` en :python:`turtle.rt()` kon je de turtle laten draaien om vervolgens een andere richting in te slaan. Maar soms is het handiger om de turtle in één keer naar een bepaalde plek in het venster te sturen. Bijvoorbeeld naar de hoek linksonder, of naar het middelpunt. Dat kun je doen door *coördinaten* te gebruiken.
+Tot nu toe bewoog je de turtle met de functies :python:`turtle.fd()` en :python:`turtle.bk()` een aantal pixels vooruit of achteruit. En met :python:`turtle.lt()` en :python:`turtle.rt()` kon je de turtle laten draaien om vervolgens een andere richting in te slaan. Maar soms is het handiger de turtle in één keer naar een bepaalde plek in het venster te sturen. Bijvoorbeeld naar de hoek linksonder, of naar het middelpunt. Dat kun je doen door *coördinaten* te gebruiken.
 
 Coördinaten zijn getallen die aangeven waar een punt ligt in een vlak. Wellicht ben je al bekend met geografische coördinaten die we gebruiken om plaatsen op de wereldkaart aan te duiden. Op `Google Maps <https://maps.google.nl>`_ kun je bijvoorbeeld de coördinaten van Gymnasium Beekvliet in Sint-Michielsgestel vinden: (51.642174818007355, 5.3640463837966434).
 
@@ -250,6 +250,8 @@ De for loop zorgt ervoor dat 10 vierkantjes worden getekend. De eerste met zijde
             tony.goto(200, z)
             z = z + 20
 
+    Op regel 6 zie je :python:`while z <= 200` staan. Dat betekent: 'zolang z kleiner of gelijk is aan 200'. In de while loop heeft :python:`z` dus achtereenvolgens de waarde 0, 20, 40 ... 180, 200.
+    
     Voeg aan dit programma een tweede while lus toe die verticale lijntjes tekent, zodat een rooster (Engels: grid) ontstaat.
 
     .. image:: images/turtle_grid.png
