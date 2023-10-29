@@ -14,3 +14,4 @@ De turtle module in Python bevat veel functies die je kunt aanroepen, maar soms 
    :caption: Onderdelen
 
    lesson_03/ch_01_coordinates
+   lesson_03/ch_02_functions
