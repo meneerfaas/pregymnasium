@@ -25,7 +25,7 @@ Mappenstructuur
 
 Bij het programmeren van een game gebruik je vaak veel bestanden: afbeeldingen, geluiden, lettertypes etcetera. Om te voorkomen dat je na enige tijd door de bomen het bos niet meer ziet, is het belangrijk dat je werkt met een goede mappenstructuur. Die structuur ga je nu maken.
 
-1. Open een Windows verkenner en ga daarin naar je :file:`Documenten` map. Waarschijnlijk staan hier verschillende Python bestanden in, die je tijdens de vorige lessen hebt aangemaakt.
+1. Open een Windows Verkenner en ga daarin naar je :file:`Documenten` map. Waarschijnlijk staan hier verschillende Python bestanden in, die je tijdens de vorige lessen hebt aangemaakt.
 
    .. image:: images/folder_structure_01.png
 
@@ -102,3 +102,19 @@ Waarschijnlijk begrijp je al wat de woorden :python:`WIDTH` en :python:`HEIGHT` 
 
 Sprites
 -------
+
+Een zwart venster is niet heel interessant. Laten we daar snel wat leven in brengen, door onze hoofdrolspeler te introduceren: een roze alien.
+
+.. image:: images/alien_centered.png
+
+De alien is een afbeelding (Engels: image) die we straks uiteraard gaan laten bewegen. Afbeeldingen van karakters en objecten in games noemen we **sprites**.
+
+1. Klik in Mu editor op de knop :guilabel:`Images`. Door dat te doen creëert Mu editor zelf een map met de naam :file:`images` in je :file:`alien` map. Er wordt automatisch een Windows Verkenner geopend waarin je dat kunt zien.
+
+   .. image:: images/images_folder.png
+
+   Alle sprites die je gebruikt in een game moeten in deze map staan, anders kan Mu editor ze niet vinden.
+
+2. Download de :download:`alien sprite <../game_assets/alien/images/alien.png>`.
+
+   .. image:: ../game_assets/alien/images/alien.png
