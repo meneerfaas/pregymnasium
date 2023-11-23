@@ -15,3 +15,4 @@ De turtle module in Python bevat veel functies die je kunt aanroepen, maar soms 
 
    lesson_03/ch_01_coordinates
    lesson_03/ch_02_functions
+   lesson_03/ch_03_if_statements

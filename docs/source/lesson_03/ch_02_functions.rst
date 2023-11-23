@@ -9,7 +9,7 @@ In Python kun je een functie herkennen aan haakjes achter de naam. Bijvoorbeeld 
 Het :python:`def` keyword
 -------------------------
 
-Om een funtie te maken heb je het :python:`def` keyword nodig. Keywords zijn woorden met een speciale betekenis in Python. Je kent bijvoorbeeld al de keywords :python:`while` en :python:`for` om loops te maken. Met het :python:`def` keyword **def**\inieer je een functie.
+Om een functie te maken heb je het :python:`def` keyword nodig. Keywords zijn woorden met een speciale betekenis in Python. Je kent bijvoorbeeld al de keywords :python:`while` en :python:`for` om loops te maken. Met het :python:`def` keyword **def**\inieer je een functie.
 
 Kopieer onderstaande code naar een nieuw bestand in Mu editor en sla het op als function_square.py. 
 
@@ -262,3 +262,4 @@ De for loop zorgt er nu voor dat 10 vierkanten worden getekend. De eerste met zi
               teleport(-10 * i, -10 * i)
               square(40 + 20 * i)
     
+In opdracht 04 zag je dat je aan een functie meer dan één argument kunt meegeven. De functie :python:`teleport(x, y)` moet een x- én een y-coördinaat meekrijgen om haar werk te kunnen doen. In het volgende onderdeel gaan we onze functies :python:`square()` en :python:`triangle()` uitbreiden met meerdere argumenten zodat je behalve de zijdelengte bijvoorbeeld ook de gewenste kleur kunt meegeven (:python:`square(100, "green")`). Daarvoor is het handig als je iets weet van *if-statements*, dus dat behandelen we eerst. Klik door naar het volgende hoofdstuk.
