@@ -2,7 +2,7 @@
    :language: python
 
 .. |br| raw:: html
-   
+
    <br/>
 
 Pygame Zero
@@ -118,33 +118,4 @@ Klik op :guilabel:`Play` om deze code te runnen. Er verschijnt een venster:
 
 Waarschijnlijk begrijp je al wat de woorden :python:`WIDTH` en :python:`HEIGHT` betekenen. Zo niet, verander dan iets aan de getallen en run de code opnieuw om het effect ervan te zien.
 
-Sprites
--------
-
-Een zwart venster is niet heel interessant. Laten we daar snel wat leven in brengen, door onze hoofdrolspeler te introduceren: een roze alien.
-
-.. image:: images/alien_centered.png
-
-De alien is een afbeelding (Engels: image) die we straks uiteraard gaan laten bewegen. Afbeeldingen van karakters en objecten in games noemen we **sprites**. Voordat we hem kunnen gebruiken, moeten we onze alien sprite downloaden en in de juiste map plaatsen. Volg onderstaande stappen om dat te doen.
-
-1. Klik in Mu editor op de knop :guilabel:`Images`. Door dat te doen creëert Mu editor zelf een map met de naam :file:`images` in je :file:`alien` map. Er wordt automatisch een Windows Verkenner geopend waarin je dat kunt zien.
-
-   .. image:: images/images_folder.png
-
-   Alle sprites die je gebruikt in een game moeten in deze map staan, anders kan Mu editor ze niet vinden.
-
-2. Download de :download:`alien sprite <../game_assets/alien/images/alien.png>`.
-
-   .. image:: ../game_assets/alien/images/alien.png
-
-3. Het gedownloade bestand komt waarschijnlijk terecht in je :file:`Downloads` map. Verplaats het bestand met behulp van de Windows Verkenner naar de :file:`alien\\images` map. Dit kan op verschillende manieren, bijvoorbeeld door het bestand van het ene venster naar het andere te verslepen. Je kunt ook het bestand in de :file:`Downloads` map selecteren, vervolgens :kbd:`Ctrl` + :kbd:`X` gebruiken om het te knippen en :kbd:`Ctrl` + :kbd:`V` in de :file:`alien\\images` map om het te plakken.
-
-   .. image:: images/download_move.png
-   
-   |br|
-
-   .. dropdown:: Tip
-      :color: info
-      :icon: info
-
-      In plaats van met de linker muisknop op de downloadlink te klikken, kun je ook de rechter muisknop gebruiken.
+Wellicht lijkt het alsof je veel werk hebt moeten verzetten om alleen maar een zwart venster op het scherm te toveren, maar van de mappenstructuur die je in dit hoofdstuk hebt gemaakt, ga je nog veel plezier hebben. En in het volgende hoofdstuk wordt de invulling van het venster uiteraard een stuk interessanter.

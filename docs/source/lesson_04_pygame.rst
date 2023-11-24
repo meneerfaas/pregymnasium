@@ -36,3 +36,4 @@ Bij het programmeren van een game komt bijna alles wat je in de vorige lessen le
    :caption: Onderdelen
 
    lesson_04/ch_01_pygame
+   lesson_04/ch_02_sprites
