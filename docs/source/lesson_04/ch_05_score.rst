@@ -8,7 +8,7 @@
 Winnen en verliezen
 ====================
 
-Bij veel games gaat het om winnen of verliezen. Als je wint, heb je een goede score en als je verliest is het 'game over'. In dit laatste hoofdstuk maken we een spel waarin je aliens zo lang mogelijk in de lucht moet houden. Zodra een alien de grond raakt, is het spel afgelopen.
+Bij veel games gaat het om winnen of verliezen. Als je wint, heb je een goede score en als je verliest is het 'game over'. In dit hoofdstuk maken we een spel waarin je aliens zo lang mogelijk in de lucht moet houden. Zodra een alien de grond raakt, is het spel afgelopen.
 
 Het uitgangspunt voor het spel is de onderstaande code.
 
@@ -146,7 +146,7 @@ De 'game over' boodschap verschijnt niet. Er gebeurt helemaal niets. De oorzaak 
    :color: info
    :icon: info
 
-   In Python maak je een variabele met een assignment statement:
+   In Python creëer je een variabele met een assignment statement:
 
    .. card:: Assignment statement
 
