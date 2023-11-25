@@ -228,7 +228,7 @@ Dat is waarschijnlijk niet helemaal wat je voor ogen hebt wanneer je de alien in
          :scale: 50%
 
 
-De alien sprite heeft een breedte en een hoogte. Wanneer je :python:`alien.x` en :python:`alien.y` een waarde geeft, zorgt Pygame ervoor dat het middelpunt (:python:`center`) van de sprite op die positie terecht komt. Maar wij willen graag dat het punt rechtsonder (:python:`bottomright`) op de coördinaten :python:`(600, 400)` terecht komt. Dit kun je doen door regels 7 en 8 van je programma als volgt aan te passen:
+De alien sprite heeft een breedte en een hoogte. Wanneer je :python:`alien.x` en :python:`alien.y` een waarde geeft, zorgt Pygame ervoor dat het middelpunt (:python:`center`) van de sprite op die positie terecht komt. Het middelpunt is namelijk het standaard *ankerpunt*  van een sprite. Wij willen echter graag dat het punt rechtsonder (:python:`bottomright`) op de coördinaten :python:`(600, 400)` terecht komt. Dit kun je doen door regels 7 en 8 van je programma als volgt aan te passen:
 
 .. code-block:: python
    :class: no-copybutton
@@ -250,6 +250,12 @@ Je kunt het ook in één regel doen:
    :name: alien_v08
 
    alien.bottomright = (WIDTH, HEIGHT)
+
+Nu staat de alien precies op de plek die we wilden:
+
+.. image:: images/alien_bottomright_right.png
+
+|br|
 
 .. dropdown:: Opdracht 02
    :color: secondary
