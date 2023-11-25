@@ -422,4 +422,6 @@ Om de muziek te laten afspelen hoef je slechts één regel aan het hoofdprogramm
    clock.schedule_interval(increment_score, 1)
    music.play('astro_race')
 
-De basis van het spel is nu klaar. Natuurlijk zijn nog allerhande verbeteringen mogelijk. In het laatste hoofdstuk bekijken we een paar mogelijkheden.
+.. figure:: images/game_final.png
+
+De basis van het spel is nu klaar. Natuurlijk zijn nog allerhande verbeteringen mogelijk. In het volgende hoofdstuk bekijken we een paar mogelijkheden.
