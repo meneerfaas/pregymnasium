@@ -39,3 +39,4 @@ Bij het programmeren van een game komt bijna alles wat je in de vorige lessen le
    lesson_04/ch_02_sprites
    lesson_04/ch_03_movement
    lesson_04/ch_04_events
+   lesson_04/ch_05_score

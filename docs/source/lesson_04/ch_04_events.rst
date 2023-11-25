@@ -201,4 +201,175 @@ Zet voordat je deze code uitvoert de startsnelheid in regel 8 op 1:
    
       :python:`f"Snelheid: {alien.speed}."`
    
-   De letter f geeft aan dat    
+   De letter f geeft aan dat de tekst een *formatted string*, kortweg f-string, is. Met zo'n f-string kun je op een mooie manier de waarden van variabelen verwerken in een tekst door ze tussen accolades :python:`{...}` te zetten.
+
+   In de paragraaf over muisklikken hierboven deden we bijvoorbeeld dit:
+
+   .. code-block:: python
+      :class: no-copybutton
+      :name: alien_v31
+
+      print("Muisklik met", button, "op positie", pos)
+
+   Maar je zou dit met een f-string als volgt kunnen doen:
+   
+   .. code-block:: python
+      :class: no-copybutton
+      :name: alien_v32
+
+      print(f"Muisklik met {button} op positie {pos}.")
+
+   Behalve de snelheid, zou je ook de positie van de alien op het scherm kunnen tonen, bijvoorbeeld op deze manier:
+
+   .. code-block:: python
+      :class: no-copybutton
+      :linenos:
+      :lineno-start: 13
+      :caption: alien.py
+      :name: alien_v33
+
+      screen.draw.text(f"Snelheid: {alien.speed}. Positie: {alien.center}.", (10, 10), color="orange")
+      
+   En om deze twee zinnen op twee regels af te drukken, kun je het newline karakter :python:`\\n` gebruiken:
+
+   .. code-block:: python
+      :class: no-copybutton
+      :linenos:
+      :lineno-start: 13
+      :caption: alien.py
+      :name: alien_v34
+
+      screen.draw.text(f"Snelheid: {alien.speed}.\nPositie: {alien.center}.", (10, 10), color="orange")
+
+
+.. dropdown:: Opdracht 01
+   :color: secondary
+   :icon: pencil
+
+   a. Wijzig je programma zodat de alien van richting verandert zodra erop wordt geklikt. Ging de alien naar rechts, dan moet hij dus naar links en vice versa.
+
+   .. dropdown:: Hint
+      :color: secondary
+      :icon: light-bulb
+
+      Je hoeft slechts één regel code te veranderen.
+
+      .. code-block:: python
+         :class: no-copybutton
+         :linenos:
+         :lineno-start: 21
+         :emphasize-lines: 4
+         :caption: alien.py
+         :name: alien_v35
+
+         # Mouse down event handler
+         def on_mouse_down(button, pos):
+            if alien.collidepoint(pos):
+               alien.speed = ...
+
+   .. dropdown:: Oplossing
+      :color: secondary
+      :icon: check-circle
+
+      .. code-block:: python
+         :class: no-copybutton
+         :linenos:
+         :lineno-start: 21
+         :emphasize-lines: 4
+         :caption: alien.py
+         :name: alien_v36
+
+         # Mouse down event handler
+         def on_mouse_down(button, pos):
+            if alien.collidepoint(pos):
+               alien.speed = -alien.speed
+
+   b. Zorg ervoor dat de alien weer aan de andere kant van het venster verschijnt nadat hij buiten beeld verdwijnt.
+
+   .. dropdown:: Hint
+      :color: secondary
+      :icon: light-bulb
+
+      Hiervoor moet je het :python:`if` statement in de :python:`update()` functie uitbreiden met een :python:`elif`. 
+
+   .. dropdown:: Oplossing
+      :color: secondary
+      :icon: check-circle
+
+      .. code-block:: python
+         :class: no-copybutton
+         :linenos:
+         :lineno-start: 15
+         :emphasize-lines: 6-7
+         :caption: alien.py
+         :name: alien_v37
+
+         # De update() functie van de game
+         def update():
+            alien.left += alien.speed
+            if alien.left >= WIDTH:
+               alien.right = 0
+            elif alien.right <= 0:
+               alien.left = WIDTH     
+
+.. dropdown:: Opdracht 02
+   :color: secondary
+   :icon: pencil
+
+   Vervang je code door de onderstaande (kopiëren en plakken) en run de code om te zien wat er gebeurt.
+
+   .. code-block:: python
+      :linenos:
+      :caption: alien.py
+      :name: alien_v38
+
+      # Vensterafmetingen
+      WIDTH = 600
+      HEIGHT = 400
+
+      # Roze alien Actor
+      alien = Actor('alien_pink')
+      alien.center = (WIDTH / 2, HEIGHT / 2)
+      alien.speed = 1
+
+      # De draw() functie van de game
+      def draw():
+         screen.clear()
+         alien.draw()
+
+      # De update() functie van de game
+      def update():
+         alien.y += alien.speed
+         if alien.bottom > HEIGHT:
+            pass
+      
+      # Mouse down event handler
+      def on_mouse_down(button, pos):
+         if alien.collidepoint(pos):
+            pass
+
+   De alien beweegt naar beneden en verdwijnt uit het venster. Vervang het keyword :python:`pass` (wat in Python betekent 'doe niets') in de regels 19 en 24 door code die ervoor zorgt dat:
+
+   * de alien stil blijft staan zodra hij de onderkant van het venster raakt;
+   * de alien 50 pixels omhoog gaat zodra je er met de muis op klikt (en vervolgens weer naar beneden valt).
+
+   .. dropdown:: Oplossing
+      :color: secondary
+      :icon: check-circle
+
+      .. code-block:: python
+         :linenos:
+         :lineno-start: 15
+         :emphasize-lines: 5, 10
+         :caption: alien.py
+
+         # De update() functie van de game
+         def update():
+            alien.y += alien.speed
+            if alien.bottom > HEIGHT:
+               alien.bottom = HEIGHT
+         
+         # Mouse down event handler
+         def on_mouse_down(button, pos):
+            if alien.collidepoint(pos):
+               alien.y -= 50 
