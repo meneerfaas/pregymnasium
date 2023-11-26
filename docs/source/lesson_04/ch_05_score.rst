@@ -422,6 +422,65 @@ Om de muziek te laten afspelen hoef je slechts één regel aan het hoofdprogramm
    clock.schedule_interval(increment_score, 1)
    music.play('astro_race')
 
+De basis van het spel is nu klaar. Ben je ergens halverwege de draad kwijtgeraakt, dan kun je hieronder de volledige code bekijken. Natuurlijk zijn nog allerhande verbeteringen mogelijk. In het volgende hoofdstuk bekijken we enkele van die verbetermogelijkheden.
+
 .. figure:: images/game_final.png
 
-De basis van het spel is nu klaar. Natuurlijk zijn nog allerhande verbeteringen mogelijk. In het volgende hoofdstuk bekijken we een paar mogelijkheden.
+.. dropdown:: Volledige code van het spel
+   :color: info
+   :icon: info
+
+   .. code-block:: python
+      :linenos:
+      :caption: alien.py
+
+      # Vensterafmetingen
+      WIDTH = 600
+      HEIGHT = 400
+
+      # Roze alien Actor
+      alien = Actor('alien_pink')
+      alien.midbottom = (WIDTH / 2, 0)
+      alien.speed = 3
+      alien.jump_distance = 150
+
+      # Game over message
+      game_over_message = Actor('game_over')
+      game_over_message.center = (WIDTH / 2, HEIGHT / 2)
+
+      # Variables
+      game_over = False
+      score = 0
+
+      # Functie increment_score() verhoogt de score
+      def increment_score():
+         global score
+         score += 1
+
+      # De draw() functie van de game
+      def draw():
+         screen.blit('background', (0, 0))
+         alien.draw()
+         screen.draw.text(f"Score: {score}", (10, 10), color = "yellow", fontsize = 40)
+         if game_over:
+            game_over_message.draw()
+
+      # De update() functie van de game
+      def update():
+         global game_over
+         alien.y += alien.speed
+         if alien.bottom > HEIGHT:
+            alien.bottom = HEIGHT
+            game_over = True
+            clock.unschedule(increment_score)
+      
+      # Mouse down event handler
+      def on_mouse_down(button, pos):
+         if game_over:
+            return
+         if alien.collidepoint(pos):
+            alien.y -= alien.jump_distance
+            
+      # Hoofdprogramma
+      clock.schedule_interval(increment_score, 1)
+      music.play('astro_race')      
