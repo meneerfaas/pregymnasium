@@ -81,7 +81,7 @@ Momenteel beweegt de alien alleen verticaal. Het spel wordt interessanter als hi
 
    .. code-block:: python
       :linenos:
-      :lineno-start: 45
+      :lineno-start: 5
       :emphasize-lines: 4-5
       :caption: alien.py
 
