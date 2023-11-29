@@ -160,7 +160,7 @@ Door in regel 18 de rechterzijde van de alien op 0 te zetten, plaatsen we hem ne
    :icon: pencil
 
    Wijzig je programma zodat de alien van boven naar beneden beweegt, maar niet uit het venster verdwijnt. Zodra zijn voeten de onderkant raken, moet hij stoppen met bewegen.
-   Als je opdracht 02 hebt gemaakt, hoef je hiervoor alleen maar regel 18 aan te passen.
+   Als je opdracht 02 hebt gemaakt, hoef je hiervoor alleen maar regels 17 en 18 aan te passen.
 
    .. image:: images/movement_05.png
       :scale: 75%
