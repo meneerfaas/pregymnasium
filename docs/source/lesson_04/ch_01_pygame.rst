@@ -65,7 +65,7 @@ Als je al weet hoe je met de Windows Verkenner nieuwe mappen maakt en hoe je bes
 
       .. image:: images/folder_structure_05.png
 
-   6. Ga terug naar je :file:`Documenten` map (door in de adresbalk of in het linker navigatiepaneel op :guilabel:`Documenten` te klikken). Klap vervolgens in het navigatiepaneel aan de linkerkant je :file:`Documenten` map uit en ook de map :file:`python projects` die eronder zit. 
+   6. Ga terug naar je :file:`Documenten` map (door in de adresbalk of in het linker navigatiepaneel op :guilabel:`Documenten` te klikken). Klap vervolgens in het navigatiepaneel aan de linkerkant :file:`Deze computer` (Engels: :file:`This PC`) uit, vervolgens je :file:`Documenten` map en ook de map :file:`python projects` die eronder zit. 
 
       .. image:: images/folder_structure_06.png
 
