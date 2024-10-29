@@ -65,6 +65,7 @@ Op regel 4 zorgt :python:`tony.shape('turtle')` ervoor dat onze schildpad er ook
 De waarde die je tussen de haakjes aan de functie :python:`tony.forward()` meegeeft, is het aantal pixels dat de schildpad vooruit moet bewegen. Maar wat doet het getal :python:`90` tussen de haakjes van :python:`tony.left()`?
 
 .. dropdown:: Vraag 01
+    :open:
     :color: secondary
     :icon: question
 
@@ -101,6 +102,7 @@ Tot nu toe hebben we in onze code voor de beweging van de schilpad de functies :
 
 
 .. dropdown:: Opdracht 01
+    :open:
     :color: secondary
     :icon: pencil
 
@@ -150,6 +152,7 @@ Daarnaast kun je de pendikte instellen met de volgende functie:
 Bij de functies :python:`turtle.penup()` en :python:`turtle.pendown()` zet je niks tussen de haakjes, maar de functie :python:`turtle.pensize()` heeft wél input nodig. Tussen de haakjes zet je een geheel getal dat de pendikte in pixels aangeeft. Dus bijvoorbeeld :python:`turtle.pensize(10)`
 
 .. dropdown:: Opdracht 02
+    :open:
     :color: secondary
     :icon: pencil
 
@@ -180,6 +183,7 @@ Onze schildpad tekent vooralsnog zwarte lijnen; tijd voor wat fleurigheid! Uiter
 Tussen de haakjes geef je de gewenste kleur mee met de Engelse naam tussen aanhalingstekens, bijvoorbeeld :python:`turtle.pencolor('yellow')` of :python:`turtle.pencolor('green')`. Andere kleuren zijn :python:`gold`, :python:`orange`, :python:`red`, :python:`maroon`, :python:`violet`, :python:`magenta`, :python:`purple`, :python:`navy`, :python:`blue`, :python:`skyblue`, :python:`cyan`, :python:`turquoise`, :python:`lightgreen`, :python:`darkgreen`, :python:`chocolate`, :python:`brown`, :python:`black` en :python:`gray`. En er zijn er nog veel meer! Op `deze website <https://trinket.io/docs/colors>`_ kun je een kleurenpalet vinden.
 
 .. dropdown:: Opdracht 03
+    :open:
     :color: secondary
     :icon: pencil
 
@@ -193,6 +197,7 @@ Draaiingshoeken
 Draaien met een hoek van 90° is niet zo moeilijk. Draaiingshoeken met een andere grootte zijn lastiger dan je misschien denkt. Probeer de onderstaande opdracht maar eens.
 
 .. dropdown:: Opdracht 04
+    :open:
     :color: secondary
     :icon: pencil
 
@@ -267,6 +272,7 @@ Je kunt dit uitproberen met het onderstaande codevoorbeeld. Maak hiervoor weer e
     tony.end_fill()
 
 .. dropdown:: Opdracht 05
+    :open:
     :color: secondary
     :icon: pencil
 
@@ -385,6 +391,7 @@ Zie je het verschil tussen de beide functies? :python:`turtle.dot()` levert een 
     Run het programma en wijzig daarna regel 5 in :python:`tony.circle(40, 360, 5)`. Run weer en wijzig daarna regel 5 in :python:`tony.circle(40, 360, 6)`. Zie je wat het derde getal doet?
 
 .. dropdown:: Opdracht 06
+    :open:
     :color: secondary
     :icon: pencil
 
