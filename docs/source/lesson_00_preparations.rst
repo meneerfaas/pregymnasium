@@ -8,25 +8,23 @@ Om te kunnen programmeren heb je een *programmeeromgeving* nodig: een programma 
 
 Mu editor starten
 -----------------
-Start Mu editor via de Windows Startknop linksonder in je scherm.
+Klik op de Windows Startknop:
 
-.. grid:: 2
+.. figure:: images/windows_start_button_small.png
+    :class: image-border
 
-    .. grid-item::
-        :columns: auto
+en typ *mu* om Mu editor te zoeken. Klik daarna op het Mu editor icoon om het programma te starten.
 
-        .. image:: images/windows_start.png
-            :height: 39px
+.. figure:: images/start_mu_small.png
+    :class: image-border
 
-    .. grid-item::
-        :columns: auto
+De eerste keer kan het opstarten van Mu editor even duren, dus heb geduld. Mogelijk vraagt het programma na het opstarten om de *Mode* in te stellen. Selecteer dan *Python 3* en klik op :guilabel:`OK`.
 
-        .. image:: images/mu_windows_start.png
-            :height: 36px
+.. figure:: images/mu_select_mode.png
 
-Controleer nadat je Mu editor hebt opgestart, dat rechtsonder in de statusbalk Python 3 staat. Als er iets anders staat, klik dan op de Mode knop en selecteer Python 3.
+Als het goed is, zie je rechtsonder in de statusbalk van het Mu editor venster *Python 3* staan. Als er iets anders staat, klik dan op de :guilabel:`Mode` knop en selecteer Python 3.
 
-.. image:: images/mu_editor.png
+.. image:: images/mu_editor_python3.png
 
 
 Vensters rangschikken

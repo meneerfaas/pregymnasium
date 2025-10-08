@@ -201,6 +201,8 @@ Draaien met een hoek van 90° is niet zo moeilijk. Draaiingshoeken met een ander
     :color: secondary
     :icon: pencil
 
+    :bdg-secondary-line:`Extra uitdagend!`
+
     Begin met een nieuw codebestand (via de :guilabel:`New` knop). Importeer de :python:`turtle` module en maak een turtle aan. In de vorige opdrachten heette de turtle :python:`tony`, maar je mag nu ook zelf een naam verzinnen. Sla het bestand op onder de naam :file:`turtle_house.py`.
 
     Maak een algoritme dat de onderstaande figuur tekent zónder de pen van het papier te halen, zónder de :python:`turtle.bk()` functie te gebruiken en zónder een draai van 180° te maken.
