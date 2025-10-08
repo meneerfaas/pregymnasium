@@ -174,7 +174,7 @@ Door in regel 18 de rechterzijde van de alien op 0 te zetten, plaatsen we hem ne
       .. code-block:: python
          :class: no-copybutton
          :linenos:
-         :emphasize-lines: 19
+         :emphasize-lines: 16-18
          :caption: alien.py
          :name: alien_v15
 
